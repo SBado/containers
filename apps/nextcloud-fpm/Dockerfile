@@ -2,6 +2,8 @@ FROM docker.io/nextcloud:27.0.2-fpm@sha256:45b23b0ae64885eb40809b8a74f497228b39a
 # hadolint ignore=DL3008,DL3015,SC2086,SC2155,DL4006
 RUN set -ex; \
     \
+    echo "deb http://ftp.debian.org/debian $(lsb_release -cs) non-free" >> \
+    /etc/apt/sources.list.d/intel-graphics.list && \
     apt-get update; \
     apt-get install -y --no-install-recommends \
         jq \
@@ -15,6 +17,7 @@ RUN set -ex; \
         heif-gdk-pixbuf \
         imagemagick-common \
         libmagickcore-6.q16-6-extra \
+        intel-media-va-driver-non-free \
     ; \
     savedAptMark="$(apt-mark showmanual)"; \
     \
