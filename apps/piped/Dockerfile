@@ -1,6 +1,6 @@
 FROM 1337kavin/piped-frontend:latest
 
-COPY ./nginix/nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 
 LABEL "org.opencontainers.image.source"="https://github.com/truecharts/containers"
