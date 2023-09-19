@@ -1,4 +1,4 @@
-FROM josh5/steam-headless:latest@sha256:45443644fb98c2610cb2720c9dba3fbba744d83c4905e93a98057e207df60700
+FROM josh5/steam-headless:latest@sha256:d2917d9d0aaaa2dce906d0c7117123b474da317d85fa697d6552ec7f52a6f567
 LABEL org.opencontainers.image.source=https://github.com/truecharts/containers
 ARG CONTAINER_NAME
 ARG CONTAINER_VER

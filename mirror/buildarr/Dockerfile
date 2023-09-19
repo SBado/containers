@@ -1,4 +1,4 @@
-FROM callum027/buildarr:0.6.1@sha256:df029b350cbb8826d2196b50ec67b51db1d1669b80a29ca00c2a124e006b996c
+FROM callum027/buildarr:0.6.2@sha256:d9af4933524f4966c9697d0688c511d7b1ca946690f3ef0a90e5554dbf0c1ed8
 LABEL org.opencontainers.image.source=https://github.com/truecharts/containers
 ARG CONTAINER_NAME
 ARG CONTAINER_VER
